@@ -92,6 +92,7 @@ section {
 	border-radius: 25px;
 	padding: 20px 10px 10px 10px;
 }
+section em{font-size:20px;}
 /*rotates the image when hover over*/
 /*section img:hover{
 		-webkit-animation: rotation 5s infinite linear;
@@ -179,6 +180,8 @@ aside {
 	border-radius: 25px;
 	padding: 20px 10px 10px 10px;
 }
+
+aside em{font-size:20px;}
 /*rotates the image when hover over*/
 /*aside img:hover{
 		-webkit-animation: rotation 5s infinite linear;
