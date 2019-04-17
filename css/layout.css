@@ -4,13 +4,13 @@ body {
 }
 
 header {
-	font: 42px/2 Impact, sans-serif;
+	font: 32px/2 Impact, sans-serif;
 	font-style:italic;
 	color: black;/*white;*/
 	background-color: #BD4932;
 	text-shadow: 3px 3px #666;
 	text-align: center;
-	padding-top: 2%;/*was 8%, too big*/
+	padding-top: /*2%;was 8%, too big*/
 }
 
 #wrap {
@@ -92,9 +92,10 @@ section {
 	border-radius: 25px;
 	padding: 20px 10px 10px 10px;
 }
-section img:hover{/*rotates the image when hover over*/
+/*rotates the image when hover over*/
+/*section img:hover{
 		-webkit-animation: rotation 5s infinite linear;
-}
+}*/
 .sidenav {
   float:left;
   height: 100%;
@@ -157,7 +158,7 @@ section img {
 	padding-bottom: 1%;
 }
 /*transition to increase size of image*/
-section img{
+/*section img{
 	width: 200px;
 	height: 150px;
 	-webkit-transition: 3s;
@@ -168,7 +169,7 @@ section img{
 img:hover {
 	width: 300px;
 	height: 250px;
-}
+}*/
 
 aside {
 	float: right;
@@ -178,10 +179,10 @@ aside {
 	border-radius: 25px;
 	padding: 20px 10px 10px 10px;
 }
-
-aside img:hover{/*rotates the image when hover over*/
+/*rotates the image when hover over*/
+/*aside img:hover{
 		-webkit-animation: rotation 5s infinite linear;
-}
+}*/
 
 @-webkit-keyframes rotation {
 		from {
