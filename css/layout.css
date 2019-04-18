@@ -29,6 +29,7 @@ header {
 	padding-left: 1%;
 }
 
+/*ID Selector*/
 #wrap h1:hover{ /*used nav a:hover because with just a:hover, it affected the footer links*/
 	font: 40px/1.4 'Gloria Hallelujah', cursive;/*increasing size, font-family and color to show effect*/
 	color: yellow;
@@ -40,6 +41,10 @@ h2, p {
 	padding-left: 1%;
 }
 
+/*Sibling Selector*/
+	
+	h2 ~ p {font-style: italic;} /*all  p's is affected in this statement*/
+/*Transistion Delay*/
 h2{
 	font: 30px/1.4 Impact, sans-serif;
 	color: white;
@@ -49,41 +54,14 @@ h2{
 	transition: 3s;
 }
 
+/*Descendant Parent Selector*/
 h2:hover { /*used nav a:hover because with just a:hover, it affected the footer links*/
 	font: 40px/1.4 'Gloria Hallelujah', cursive;/*increasing size, font-family and color to show effect*/
 	color: yellow;
 }
 
 
-/*footer {
-	text-align: center;
-	background-color: #BD4932;
-	padding-bottom: 1%;
-}
-
-footer li {
-	display: inline;
-	padding: 3.2%;
-}
-
-footer a {
-	font: 30px/6 Impact, sans-serif;
-	font-style:italic;
-	color: black;
-	text-shadow: 2px 2px #666;
-	text-decoration: none;
-	-webkit-transition: 3s;
-	-moz-transition: 3s;
-	transition: 3s;
-}
-
-footer a:hover { /*used nav a:hover because with just a:hover, it affected the footer links*/
-	/*font: 40px/1.4 'Gloria Hallelujah', cursive;/*increasing size, font-family and color to show effect*/
-	/*color: yellow;
-
-}*/
-
-
+/*Defined Grid for my Footer on each of the 4 pages, and Class Selector*/
 	.sidebar {
         grid-area: sidebar;
     }
@@ -138,7 +116,7 @@ footer a:hover { /*used nav a:hover because with just a:hover, it affected the f
   margin-top:10px;
   margin-bottom:10px;
 }
-
+/*end of grid and footer*/
 
 section {
 	float: left;
@@ -149,7 +127,11 @@ section {
 	border-radius: 25px;
 	padding: 20px 10px 10px 10px;
 }
-section em{font-size:20px;}
+/*Multiple Selectors*/
+section em, aside em{font-size:20px;
+				color:yellow
+				}
+				
 /*rotates the image when hover over*/
 /*section img:hover{
 		-webkit-animation: rotation 5s infinite linear;
@@ -238,7 +220,7 @@ aside {
 	padding: 20px 10px 10px 10px;
 }
 
-aside em{font-size:20px;}
+/*aside em{font-size:20px;}*/
 /*rotates the image when hover over*/
 /*aside img:hover{
 		-webkit-animation: rotation 5s infinite linear;
