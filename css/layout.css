@@ -55,7 +55,7 @@ h2:hover { /*used nav a:hover because with just a:hover, it affected the footer 
 }
 
 
-footer {
+/*footer {
 	text-align: center;
 	background-color: #BD4932;
 	padding-bottom: 1%;
@@ -78,10 +78,63 @@ footer a {
 }
 
 footer a:hover { /*used nav a:hover because with just a:hover, it affected the footer links*/
-	font: 40px/1.4 'Gloria Hallelujah', cursive;/*increasing size, font-family and color to show effect*/
+	/*font: 40px/1.4 'Gloria Hallelujah', cursive;/*increasing size, font-family and color to show effect*/
+	/*color: yellow;
+
+}*/
+
+
+	.sidebar {
+        grid-area: sidebar;
+    }
+
+    .content {
+        grid-area: content;
+    }
+
+    .header {
+        grid-area: header;
+    }
+	.contact {
+        grid-area: contact;
+    }
+	
+  footer {
+    display: grid;
+    grid-gap: 10px;
+        grid-template-columns: 500px  200px  200px 200px 200px;
+        grid-template-areas:
+               "....... header sidebar content contact"
+                            /* "sidebar content content"*/;/*moved up with header to keep all grids inline*/
+        background-color: #fff;
+        color: #444;
+		text-align: center;
+   }
+	footer a {
+	font: 15px/6 Impact, sans-serif;
+	font-style:italic;
+	color: white;
+	text-shadow: 2px 2px #666;
+	text-decoration: none;
+	-webkit-transition: 3s;
+	-moz-transition: 3s;
+	transition: 3s;
+}
+footer a:hover { /*used nav a:hover because with just a:hover, it affected the footer links*/
+	font: 36px/1.4 'Gloria Hallelujah', cursive;/*increasing size, font-family and color to show effect*/
 	color: yellow;
 
 }
+.box {
+  background-color: black;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
 
 section {
 	float: left;
