@@ -95,6 +95,10 @@ footer a:hover { /*used nav a:hover because with just a:hover, it affected the f
     .header {
         grid-area: header;
     }
+	
+	.home {
+        grid-area: home;
+    }
 	.contact {
         grid-area: contact;
     }
@@ -102,9 +106,9 @@ footer a:hover { /*used nav a:hover because with just a:hover, it affected the f
   footer {
     display: grid;
     grid-gap: 10px;
-        grid-template-columns: 500px  200px  200px 200px 200px;
+        grid-template-columns: 400px  200px 200px  200px 200px 200px;;
         grid-template-areas:
-               "....... header sidebar content contact"
+               "....... home header sidebar content contact"
                             /* "sidebar content content"*/;/*moved up with header to keep all grids inline*/
         background-color: #fff;
         color: #444;
